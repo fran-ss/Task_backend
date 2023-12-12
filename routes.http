@@ -1,0 +1,54 @@
+
+GET http://localhost:3333/user
+Authorization: bearer MQ.0ebEdZ3dg3vJb0JVnJPX_cCuQse59gw82DqCoMRTbSGe6dBC1zM4KtVwKjcO
+
+####
+POST http://localhost:3333/user
+Content-Type: application/json
+
+{
+    "name": "franciane",
+    "email":"franciane@gmail.com",
+    "password": "secret"
+}
+
+###
+GET http://localhost:3333/user/1
+
+
+###
+PUT http://localhost:3333/user/1
+Content-Type: application/json
+
+{
+    "name":"hadna"
+}
+
+###
+
+
+POST http://localhost:3333/auth
+Content-Type: application/json
+
+{
+    "name": "franciane",
+    "email":"franciane@gmail.com",
+    "password": "secret"
+}
+
+###
+POST http://localhost:3333/task
+Content-Type: application/json
+Authorization: bearer MQ.0ebEdZ3dg3vJb0JVnJPX_cCuQse59gw82DqCoMRTbSGe6dBC1zM4KtVwKjcO
+
+{    
+
+    "title":"organizar a casa",
+    "description": "Lavar tudo",
+    "status": "Em Andamento"
+}
+
+###
+DELETE http://localhost:3333/user/2
+
+
