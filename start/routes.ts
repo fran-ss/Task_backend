@@ -29,3 +29,4 @@ Route.delete('/user/:id', 'UsersController.destroy')
 
 Route.post('/auth', 'AuthController.store')
 Route.post('/task', 'TasksController.store')
+Route.get('dashboard', 'DashboardController.index').middleware('auth') // 👈
